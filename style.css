@@ -1,49 +1,35 @@
 body {
     margin: 0;
 }
+p {
+    padding: 12px;
+}
+h1 {
+    padding: 10px;
+    color: turquoise;
+    font-size: 40px;
+}
+h2 {
+    padding-left: 20px;
+}
 .topo {
     width: 100%;
-    max-width: 800px;
     height: 100px;
-    margin:auto;
+    line-height: 100px;
+    background-color: yellowgreen;
+    text-align: center;
 }
-.logo {
-    width: 50%;
-    height: 100px;
+.cidade {
+    width: 25%;
     float: left;
-    background-color: #EEE;
 }
-.menu {
-    width: 50%;
-    height: 100px;
-    float: left;
-    background-color: #DDD;
-}
-.corpo {
-    width: 100%;
-    max-width: 800px;
-    height: 200px;
-    margin: auto;
-    background-color: #CCC;
-}
-.rodape {
-    width: 100%;
-    max-width: 800px;
-    height: 100px;
-    margin: auto;
-    background-color: #DDD;
-}
-@media only screen and (max-width: 500px) {
-
-    .topo {
-        height: 200px;
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .cidade {
+        width: 50%;
     }
-    .logo {
+}
+@media only screen and (max-width:500px) {
+    .cidade {
         width: 100%;
     }
-    .menu {
-        width: 100%;
-    }
-
 }
-
