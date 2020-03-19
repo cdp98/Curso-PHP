@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Página teste</title>
+        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
@@ -45,5 +46,38 @@
             – Minha tanga, minha tanga, o fogo está destruindo minha tanga…”
             </p>
         </div>
-    </body>    
+        <div class="rodape"
+            <div class="lista">
+                <ol type="*">
+                    <li>Nome</li>
+                    <li>Número</li>
+                    <li>Série</li>
+                    <li>Sala</li>
+                </ol>
+            </div>
+            <div class="table">
+                <table width="500" border="1" align="center">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Número</td>
+                        <td>Série</td>
+                    </tr>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Número</td>
+                        <td>Série</td>
+                    </tr>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Número</td>
+                        <td>Série</td>
+                    </tr>
+                    <tr>
+                        <td>Nome</td>
+                        <td colspan="2">Número</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>
