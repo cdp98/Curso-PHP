@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Wordwrap</title>
-        <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+        <meta charset="utf-8" id="viewport" name="viewport" content="width=device-width, user-scalable=no">
         <link href="wordwrap.css" rel="stylesheet">
     </head>
     <bdy>
