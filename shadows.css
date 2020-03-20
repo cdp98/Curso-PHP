@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    box-shadow: 10px 10px 15px #888888;
+    margin: auto;
+    margin-top: 100px;
+    color: red;
+    text-shadow: 5px 5px 5px #888888;
+    font-size: 20px;
+}
