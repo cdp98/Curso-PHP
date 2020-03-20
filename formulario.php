@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title></title>
+        <title>Formulário</title>
         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
         <link href="style2.css" rel="stylesheet">
     </head>
