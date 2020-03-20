@@ -6,7 +6,5 @@
     </head>
     <bdy>
         <div class="exemplo"></div>
-
-        <a href:>google</a>
     </body>
 </html>
