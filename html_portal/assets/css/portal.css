@@ -165,8 +165,38 @@ body {
 .leftside {
     width: 753px;
     float: left;
-    min-height: 200px;
-    background-color: blue;
+}
+.slideshow {
+    height: 335px;
+    background-color: #CCC;
+    overflow: hidden;
+}
+.slideshowarea {
+    height: 335px;
+    width: 1000px;
+    background-color: #DDD;
+}
+.slide {
+    height: 335px;
+    float: left;
+    background-position: center;
+}
+.slideinfo {
+    height: 70px;
+    background-image: url('../images/slideshow_bg.png');
+    background-size: auto 70px;
+    margin-top: 265px;
+}
+.slideinfo_titulo {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+.slideinfo_subtitulo {
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
 }
 .rightside {
     width: 275px;
