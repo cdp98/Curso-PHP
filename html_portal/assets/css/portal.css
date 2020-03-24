@@ -331,7 +331,8 @@ body {
     float: left;
 }
 
-@media only screen and (max-width:1057px) {
+@media only screen and (min-width:906px) and (max-width:1057px) {
+
     .topoint,
     .topoint2,
     .menuint,
@@ -355,5 +356,110 @@ body {
     }
     .infobig {
         font-size: 11px;
+    }
+}
+@media only screen and (min-width:783px) and (max-width:906px) {
+
+    .topoint,
+    .topoint2,
+    .menuint,
+    .ultimasnoticiasint,
+    .containerint {
+        max-width: 768px;
+    }
+    .topo2 .banner {
+        display: none;
+    }
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    .leftside {
+        width: auto;
+        float:none;
+    }
+    .rightside {
+        display: none;
+    }
+    .noticiasarea1 {
+        width: 420px;
+    }
+    .noticiaitem2,
+    .imagembig,
+    .imagembig img {
+        width: 400px;
+    }
+    .resumonoticia {
+        font-size: 15px;
+    }
+    .infobig {
+        font-size: 12px;
+    }
+    .titulobig {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width:783px) {
+    .topoint,
+    .topoint2,
+    .menuint,
+    .ultimasnoticiasint,
+    .containerint {
+        max-width: 320px;
+    }
+    .topoleft {
+        display: none;
+    }
+    .toporight {
+        width: 100%;
+    }
+    .topo2 .banner {
+        display: none;
+    }
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    .menuint {
+        display:none;
+    }
+    .ultimasnoticias {
+        display:none;
+    }
+    .leftside {
+        width: auto;
+        float:none;
+        margin-top: 10px;
+    }
+    .rightside {
+        display: none;
+    }
+    .noticiasarea1 {
+        width: 320px;
+        height: auto;
+    }
+    .noticiasarea2 {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .noticiaitem2,
+    .imagembig,
+    .imagembig img {
+        width: 300px;
+    }
+    .resumonoticia {
+        font-size: 14px;
+    }
+    .infobig {
+        font-size: 10px;
+    }
+    .titulobig {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .noticiatitulo {
+        width: 215px;
+        margin-bottom: 7px;
     }
 }
