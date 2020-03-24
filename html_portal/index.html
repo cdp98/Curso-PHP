@@ -4,6 +4,7 @@
         <title>Portal</title>
         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/>
         <link href="assets/css/portal.css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
     <body>
@@ -96,16 +97,211 @@
             <div class="containerint">
                 <div class="leftside">
                     <div class="slideshow" id="slideshow">
+                        <div class="slidebolinhas">
+                            <div class="bolinha" onclick="mudarSlide(0)"></div>
+                            <div class="bolinha" onclick="mudarSlide(1)"></div>
+                            <div class="bolinha" onclick="mudarSlide(2)"></div>
+                            <div class="bolinha" onclick="mudarSlide(3)"></div>
+                        </div>
                         <div class="slideshowarea">
-                            <div class="slide" style="background-image:url('assets/images/youtube.png')">
-                                <div class="slideinfo">
-                                    <div class="slideinfo_titulo">Titulo de teste</div>
-                                    <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                            <a href="https://www.youtube.com/">
+                                <div class="slide" style="background-image:url('assets/images/youtube.png')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo de teste</div>
+                                        <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <div class="slide" style="background-image:url('assets/images/facebook.png')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo de teste 2</div>
+                                        <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/">
+                                <div class="slide" style="background-image:url('assets/images/googleplus.png')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo de teste 3</div>
+                                        <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://rss.com/">
+                                <div class="slide" style="background-image:url('assets/images/rss.png')">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo de teste 4</div>
+                                        <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">NOTÍCIAS</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiasarea1">
+                                <div class="noticiaitem2">
+                                    <div class="imagembig">
+                                            <img class="" border="0" width="400" height="200"/>
+                                    </div>
+                                    <div class="titulobig">
+                                        Criador da internet teme a perda
+                                        de todas as nossas memórias digitais no futuro.
+                                    </div>
+                                    <div class="infobig">
+                                        Deixe um Comentário
+                                    </div>
+                                    <div class="resumonoticia">
+                                        Últimas notícias do Brasil e do mundo, sobre política,
+                                        economia, emprego, educação, saúde, meio ambiente, tecnologia, ciência, cultura
+                                        e carros. Vídeos dos...
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slide" style="background-image:url('assets/images/rss.png')"></div>
-                            <div class="slide" style="background-image:url('assets/images/googleplus.png')"></div>
-                            <div class="slide" style="background-image:url('assets/images/facebook.png')"></div>
+                            <div class="noticiasarea2">
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href=""></a>
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href=""></a>Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href=""></a>
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href=""></a>Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">NOTÍCIAS</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiasarea1">
+                                <div class="noticiaitem2">
+                                    <div class="imagembig">
+                                            <img class="" border="0" width="400" height="200"/>
+                                    </div>
+                                    <div class="titulobig">
+                                        Criador da internet teme a perda
+                                        de todas as nossas memórias digitais no futuro.
+                                    </div>
+                                    <div class="infobig">
+                                        Deixe um Comentário
+                                    </div>
+                                    <div class="resumonoticia">
+                                        Últimas notícias do Brasil e do mundo, sobre política,
+                                        economia, emprego, educação, saúde, meio ambiente, tecnologia, ciência, cultura
+                                        e carros. Vídeos dos...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="noticiasarea2">
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                                <div class="noticiaitem">
+                                    <dvi class="noticiaimagem">
+                                        <img src="" border="0" width="80px" height="80px"/>
+                                    </dvi>
+                                    <div class="noticiatitulo">
+                                        <a href="">
+                                            Pessoas como ela são alicerces
+                                            para que o melhor da moda não morra!
+                                        </a>
+                                    </div>
+                                    <div class="noticiainfo">
+                                        <a href="">Deixe um Comentário</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
                         </div>
                     </div>
                 </div>

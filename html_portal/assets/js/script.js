@@ -10,7 +10,7 @@ window.onload = function() {
 }
 function passarSlide() {
 	var slidewidth = document.getElementById("slideshow").offsetWidth;
-	
+
 	if(slideItem >= 3) {
 		slideItem = 0;
 	} else {
