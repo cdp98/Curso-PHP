@@ -330,6 +330,9 @@ body {
     margin-left: 10px;
     float: left;
 }
+.menumobile {
+    display: none;
+}
 
 @media only screen and (min-width:906px) and (max-width:1057px) {
 
@@ -421,8 +424,30 @@ body {
         float: none;
         margin: auto;
     }
-    .menuint {
-        display:none;
+    .menu ul {
+        position: absolute;
+        background-color: red;
+        z-index: 10;
+        display: none;
+        margin-block-start: 0;
+    }
+    .menu li {
+        float: none;
+        line-height: normal;
+        height: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .menu li img {
+        display: none;
+    }
+    .menumobile {
+        display: block;
+    }
+    .submenu {
+        position: relative;
+        display: block;
+        margin-top: 8px;
     }
     .ultimasnoticias {
         display:none;
