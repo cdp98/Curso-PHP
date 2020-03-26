@@ -1,0 +1,15 @@
+ALGORITMO: PINTAR UMA TABELA LINHA SIM LINHA
+NÃO
+
+x=0
+linha atual = 1.
+linhas = 10.
+
+ENQUANTO (linha atual <= linhas) {
+    x = 1 - x.
+    SE x = 0
+        PINTAR LINHA DE PRETO
+    SE X = 1
+        NÃO PINTAR LINHA
+    linha atual = linha atual + 1
+}
