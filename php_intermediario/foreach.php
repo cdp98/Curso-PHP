@@ -1,5 +1,5 @@
 <?php
-
+// foreach processa uma listagem de arrays. Para cada item//
 $nome = array (
     "Daniel",
     "Fulano",
