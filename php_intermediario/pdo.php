@@ -12,7 +12,7 @@ try {
 
     if ($sql->rowCount()>0) {
         foreach ($sql->fetchAll() as $contas) {
-            echo "Nome: ".$contas["titular"]." - contas: ".$contas["conta"]."</br>";
+            echo "Nome: ".$contas["titular"]." - contas: ".$contas["conta"]." <a href='pdo.php?id={$contas['id']}'>Ver</a></br>";
         }
     }else {
         echo "não há usuários.";
@@ -22,6 +22,5 @@ try {
     echo"Falhou: ".$e->getMessage();
     //mensagem que vai aparecer caso tenha um erro.//
 };
-
 
 ?>
