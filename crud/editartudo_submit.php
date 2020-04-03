@@ -1,0 +1,15 @@
+<?php
+require 'config.class.php';
+require 'contato.class.php';
+$contato = new Contato();
+if(!empty($_POST['id'])){
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $id = $_POST['id'];
+
+    $contato->editarTudo($nome, $email, $id);
+
+    header('Location: index.teste.php');
+}else {
+    header('Location: index.teste.php');
+}
