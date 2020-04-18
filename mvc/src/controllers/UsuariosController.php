@@ -11,7 +11,7 @@ class UsuariosController extends Controller {
     }
 
     public function addAction() {
-        $name = filter_input(INPUT_POST, 'name');
+        $name = filter_input(INPUT_POST, 'nome');
         $email = filter_input(INPUT_POST, 'email');
         $senha = filter_input(INPUT_POST, 'senha');
         //recebendo os dados.
@@ -25,13 +25,13 @@ class UsuariosController extends Controller {
                     'email' => $email,
                     'senha' => $senha
                 ])->execute();
-                echo "inseriu";
-                exit;
+
+                $this->redirect('/');
             }
         }
 
         //redirect adicionar
-        echo "deu problema";
+        $this->redirect('/adicionar');
     }
 
 }

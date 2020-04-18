@@ -1,10 +1,7 @@
 <?php
-namespace src\Controllers;
+namespace src\models;
+use \core\Model;
 
-use core\Controller;
-
-class Usuario extends Controller {
-
-
+class Usuario extends Model {
 
 }

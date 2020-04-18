@@ -53,5 +53,5 @@ class RouterBase {
 
         $definedController->$action($args);
     }
-    
+
 }
