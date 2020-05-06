@@ -38,7 +38,13 @@ class LoginController extends Controller {
     }
 
     public function signup() {
-        $this->render('');
+        $flash = '';
+        if (!empty($_SESSION['flash'])) {
+            $flash = $_SESSION['flash'];
+        }
+        $this->render('cadastro', [
+            'flash' => $flash
+        ]);
     }
 
 }
