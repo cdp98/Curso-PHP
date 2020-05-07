@@ -22,8 +22,6 @@ class LoginController extends Controller {
         if ($email && $password) {
             $token = LoginHandler::verifyLogin($email, $password);
             if (!empty($token)) {
-                // print_r($token);
-                // die();
                 $_SESSION['token'] = $token;
                 $this->redirect('/home');
             }else {
@@ -67,7 +65,7 @@ class LoginController extends Controller {
             if (LoginHandler::existEmail($email) === false) {
                 $token = LoginHandler::addUser($name, $email, $password, $birthdate);
                 $_SESSION['token'] = $token;
-                $this->redirect('/');
+                $this->redirect('/home');
             }else {
                 $_SESSION['flash'] = "Email já cadastrado";
                 $this->redirect('/cadastro');

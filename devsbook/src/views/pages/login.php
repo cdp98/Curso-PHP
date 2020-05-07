@@ -38,23 +38,24 @@
                 $('.js-button').bind('click', function () {
                     var email = $('.js-email').val();
                     var password = $('.js-password').val();
-
-                    console.log(email);
-
                     if (email) {
                         if(password) {
-                            $(".js-form").submit();
+                            var email = email;
+
+                            $('.js-form').submit(function() {
+                                return true;
+                            });
                         }else {
                             $('.js-form').submit(function() {
                             return false;
                             });
-                            swal("Preencha o campo de senha");
+                            swal('Insira sua senha ', 'Aviso!', 'warning');
                         }
                     }else {
                         $('.js-form').submit(function() {
                             return false;
                         });
-                        swal("Preencha o campo de email!", "com um email válido!");
+                        swal('Insira um email válido', 'Aviso!', 'warning');
                     }
                 });
             });
