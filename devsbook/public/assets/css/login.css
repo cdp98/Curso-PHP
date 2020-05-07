@@ -6,10 +6,12 @@
     padding: 0;
 }
 body {
+    margin:0;
+}
+.bodyy {
     font-family: Helvetica;
     font-size:13px;
     background-color:#edeef0;
-    margin:0;
     padding-bottom:50px;
 }
 .container {

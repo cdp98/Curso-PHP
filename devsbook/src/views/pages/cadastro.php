@@ -6,22 +6,17 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
         <link rel="stylesheet" href="<?=$base;?>/assets/css/login.css" />
     </head>
-    <body>
+    <body class="bodyy">
         <header>
             <div class="container">
                 <a href=""><img src="<?=$base;?>/assets/images/devsbook_logo.png" /></a>
             </div>
         </header>
         <section class="container main">
-            <form method="POST" action="">
-            <?php if(!empty($flash)):?>
-                <div class="flash">
-                    <?=$flash;?>
-                </div>
-            <?php endif?>
+            <form method="POST" action="<?=$base;?>/cadastro">
                 <input placeholder="Digite seu nome" class="input" type="text" name="name" />
 
-                <input placeholder="Digite sua data de nascimento" class="input" id="date-mask" type="text" name="birthDate" />
+                <input placeholder="Digite sua data de nascimento" class="input" id="date-mask" type="text" name="birthdate" />
 
                 <input placeholder="Digite seu e-mail" class="input" type="email" name="email" />
 

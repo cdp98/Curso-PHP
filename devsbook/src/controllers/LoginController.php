@@ -19,14 +19,13 @@ class LoginController extends Controller {
     public function signinAction() {
         $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
         $password = filter_input(INPUT_POST, 'password');
-
         if ($email && $password) {
             $token = LoginHandler::verifyLogin($email, $password);
-            // print_r('token: ', $token);
-            // die();
             if (!empty($token)) {
+                // print_r($token);
+                // die();
                 $_SESSION['token'] = $token;
-                $this->redirect('/');
+                $this->redirect('/home');
             }else {
                 $_SESSION['flash'] = 'E-mail e/ou senha não conferem';
 
@@ -45,6 +44,38 @@ class LoginController extends Controller {
         $this->render('cadastro', [
             'flash' => $flash
         ]);
+    }
+
+    public function signupAction() {
+        $name = filter_input(INPUT_POST, 'name');
+        $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+        $password = filter_input(INPUT_POST, 'password');
+        $birthdate = filter_input(INPUT_POST, 'birthdate');
+
+        if ($name && $email && $password && $birthdate) {
+            $birthdate = explode('/', $birthdate);
+            if (count($birthdate) != 3) {
+                $_SESSION['flash'] = "Data de nascimento inválida";
+                $this->redirect('/cadastro');
+            }
+            $birthdate = $birthdate[2]."-".$birthdate[1]."-".$birthdate[0];
+            if (strtotime($birthdate) === false) {
+                $_SESSION['flash'] = "Data de nascimento inválida";
+                $this->redirect('/cadastro');
+            }
+
+            if (LoginHandler::existEmail($email) === false) {
+                $token = LoginHandler::addUser($name, $email, $password, $birthdate);
+                $_SESSION['token'] = $token;
+                $this->redirect('/');
+            }else {
+                $_SESSION['flash'] = "Email já cadastrado";
+                $this->redirect('/cadastro');
+            }
+        }else {
+            $this->redirect('/cadastro');
+        }
+
     }
 
 }
