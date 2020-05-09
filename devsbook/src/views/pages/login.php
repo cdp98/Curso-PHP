@@ -18,7 +18,9 @@
             <form method="POST" class="js-form" action="">
             <?php if(!empty($flash)):?>
                 <div class="flash">
-                    <?=$flash;?>
+                    <?php echo $flash;
+                        unset($_SESSION['flash']);
+                    ?>
                 </div>
             <?php endif?>
                 <input placeholder="Digite seu e-mail" class="input js-email" type="email" name="email" />

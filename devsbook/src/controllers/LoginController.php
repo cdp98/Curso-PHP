@@ -27,6 +27,8 @@ class LoginController extends Controller {
             }else {
                 $_SESSION['flash'] = 'E-mail e/ou senha não conferem';
 
+                $var = $_SESSION['flash'];
+
                 $this->redirect('/login');
             }
         }else {

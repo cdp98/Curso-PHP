@@ -27,7 +27,6 @@ class LoginHandler{
 
     public static function verifyLogin($email, $password) {
         $user = User::select()->where('email', $email)->execute();
-
         if($user) {
             $token = md5(time().rand(0, 9999).time());
 
@@ -38,6 +37,7 @@ class LoginHandler{
 
             return $token;
         }
+
         return false;
     }
 
