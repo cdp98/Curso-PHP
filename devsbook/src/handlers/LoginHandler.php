@@ -9,16 +9,18 @@ class LoginHandler{
         if(!empty($_SESSION['token'])) {
             $token = $_SESSION['token'];
 
-            $data = User::select()->where('token', $token)->execute();
+            $data = User::select()->where('token', $token)->one();
 
             if(count($data) > 0) {
 
-                $LoggedUser = new User;
-                $LoggedUser->id = $data['id'];
-                $LoggedUser->name = $data['nome'];
-                $LoggedUser->email = $data['email'];
+                $loggedUser = new User;
+                $loggedUser->id = $data['id'];
+                $loggedUser->name = $data['name'];
+                $loggedUser->email = $data['email'];
+                $loggedUser->birthname = $data['birthdate'];
+                $loggedUser->avatar = $data['avatar'];
 
-                return $LoggedUser;
+                return $loggedUser;
             }
         }
 
